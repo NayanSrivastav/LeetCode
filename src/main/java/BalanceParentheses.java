@@ -1,5 +1,4 @@
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Stack;
 
@@ -42,7 +41,7 @@ public class BalanceParentheses {
         return false;
     }
 
-    public static boolean isBalanced(@NotNull String expression) {
+    public static boolean isBalanced( String expression) {
         if (expression.length() % 2 != 0) {
             return false;
         }

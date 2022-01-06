@@ -1,4 +1,4 @@
-package LeetCode.dp;
+package dp;
 
 /**
  * Question #44

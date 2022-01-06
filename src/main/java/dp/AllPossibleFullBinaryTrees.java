@@ -1,9 +1,6 @@
-package LeetCode.dp;
+package dp;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class AllPossibleFullBinaryTrees {
 
@@ -47,6 +44,7 @@ public class AllPossibleFullBinaryTrees {
         }
 
         cache.put(n, result);
+
         return result;
     }
 }
