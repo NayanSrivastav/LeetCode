@@ -1,6 +1,7 @@
+package algo;
 
-
-import java.util.Stack;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class BalanceParentheses {
     static class Bracket {
@@ -20,7 +21,7 @@ public class BalanceParentheses {
     };
 
     public static void main(String[] args) {
-        System.out.println(isBalanced("({[{{{}}}])"));
+        System.out.println(isBalanced("({[{{{}}}]}-)"));
     }
 
     public static boolean isOpenTerm(Character term) {
@@ -46,7 +47,7 @@ public class BalanceParentheses {
             return false;
         }
 
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new LinkedList<>();
         for (Character c : expression.toCharArray()) {
             if (isOpenTerm(c)) {
                 stack.push(c);

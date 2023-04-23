@@ -15,10 +15,14 @@ public class BestTimeToBuyandSellStock {
         System.out.println(driver.maxProfit(new int[]{
                 2, 1, 4, 5, 2, 9, 7
         }));
+
+        System.out.println(driver.calculate(new int[]{
+            2, 1, 4, 5, 2, 9, 7
+        },0, 0, false));
     }
 
     public int maxProfit(int[] prices) {
-        return calculate(prices, 0, 0, false);
+        return calculate(prices);
     }
 
     public int calculate(int[] prices, int index, int max, boolean buy) {

@@ -1,10 +1,13 @@
 package dp;
 
 import java.util.*;
+import lombok.ToString;
 
 public class AllPossibleFullBinaryTrees {
 
     static Map<Integer, List<TreeNode>> cache = new HashMap<>();
+
+    @ToString
     static class TreeNode {
         int val;
         TreeNode left;
